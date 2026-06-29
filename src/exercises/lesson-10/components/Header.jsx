@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Header({ user }) {
   // Active link styling helper
@@ -33,6 +33,16 @@ export default function Header({ user }) {
           <span>Not logged in</span>
         )}
       </div>
+      <NavLink to={'/lesson/lesson-10'} style={navLinkStyles}>
+        Home
+      </NavLink>
+      <NavLink to={'/lesson/lesson-10/checkout'} style={navLinkStyles}>
+        {' '}
+        Checkout{' '}
+      </NavLink>
+      <NavLink to={'/lesson/lesson-10/account'} Acount={navLinkStyles}>
+        {' '}
+      </NavLink>
     </header>
   );
 }
